@@ -34,12 +34,12 @@ Only the JumpBox Provisioner machine can accept connections from the Internet. A
 Machines within the network can only be accessed by JumpBox Provisioner.
 - Which machine did you allow to access your ELK VM? What was its IP address? Jumpbox Provisioner has access to ELK. The private IP is 10.0.0.4 and Public is 20.49.56.179.
 A summary of the access policies in place can be found in the table below.
-| Name     | Publicly Accessible | Allowed IP Addresses                           |
-|----------|---------------------|------------------------------------------------|
-| Jump Box | No                  |  75.190.112.194 via ports 80/22                |
-|   ELK    | No                  |  75.190.112,194, 10.0.0.0/24 via port 9200     |
-|  Web 1   | No                  |10.0.0.4 via ssh, 75.190.112.194 via ports 22/80|
-|  Web 2   | No                  |10.0.0.4 via ssh, 75.190.112.194 via ports 22/80|
+| Name     | Publicly Accessible | Allowed IP Addresses                             |
+|----------|---------------------|--------------------------------------------------|
+| Jump Box | No                  |  75.190.112.194 via ports 80/22                  |
+|   ELK    | No                  |  75.190.112,194, 10.0.0.0/24 via port 9200       |
+|  Web 1   | No                  | 10.0.0.4 via ssh, 75.190.112.194 via ports 22/80 |
+|  Web 2   | No                  | 10.0.0.4 via ssh, 75.190.112.194 via ports 22/80 |
 ### Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - What is the main advantage of automating configuration with Ansible? Using a YAML playbook automates the configuration on designated servers.
